@@ -61,7 +61,7 @@
       'ENTP': 'Orange',
       'INFJ': 'Green',
       'INFP': 'Light Blue',
-      'ENFJ': 'Yellow',
+      'ENFJ': 'Iloveyou',
       'ENFP': 'Light Green',
       'ISTJ': 'Dark Blue',
       'ISFJ': 'Teal',
