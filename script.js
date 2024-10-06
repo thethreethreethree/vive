@@ -1,4 +1,5 @@
-// Update the personalityColors object to handle the ENFJ case
+// Questions and personality color logic remain the same
+
 const personalityColors = {
   'INTJ': 'Purple',
   'INTP': 'Blue',
@@ -6,7 +7,7 @@ const personalityColors = {
   'ENTP': 'Orange',
   'INFJ': 'Green',
   'INFP': 'Light Blue',
-  'ENFJ': 'I LOVE YOU', // ENFJ will show "I LOVE YOU" instead of a color
+  'ENFJ': 'I LOVE YOU', // ENFJ displays "I LOVE YOU" instead of a color
   'ENFP': 'Light Green',
   'ISTJ': 'Dark Blue',
   'ISFJ': 'Teal',
@@ -18,7 +19,6 @@ const personalityColors = {
   'ESFP': 'Peach'
 };
 
-// Function to calculate personality type and show result
 function showResult() {
   const personalityType = 
     (traits.E > traits.I ? 'E' : 'I') +
@@ -27,7 +27,7 @@ function showResult() {
     (traits.J > traits.P ? 'J' : 'P');
   
   const personalityColor = personalityColors[personalityType];
-  
+
   document.getElementById('question-container').style.display = 'none';
   document.getElementById('result-container').style.display = 'block';
   
