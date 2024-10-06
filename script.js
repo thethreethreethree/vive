@@ -1,4 +1,3 @@
-// Define traits for user responses
 let traits = {
   E: 0,
   I: 0,
@@ -10,11 +9,8 @@ let traits = {
   P: 0
 };
 
-// Function to select answer
 function selectAnswer(option) {
-  // Logic to handle user responses (update traits accordingly)
-  // This is just a placeholder; you will want to customize this
-  // based on your questions and answer structure.
+  console.log("Selected Option: ", option); // Debugging line
 
   // Example logic for answering questions
   if (option === 1) {
@@ -29,38 +25,21 @@ function selectAnswer(option) {
     traits.P++;
   }
 
-  // Proceed to show the result
   showResult();
 }
 
-// Color mapping based on personality type
 const personalityColors = {
-  'INTJ': 'Purple',
-  'INTP': 'Blue',
-  'ENTJ': 'Red',
-  'ENTP': 'Orange',
-  'INFJ': 'Green',
-  'INFP': 'Light Blue',
-  'ENFJ': 'I LOVE YOU', // ENFJ will show "I LOVE YOU" instead of a color
-  'ENFP': 'Light Green',
-  'ISTJ': 'Dark Blue',
-  'ISFJ': 'Teal',
-  'ESTJ': 'Maroon',
-  'ESFJ': 'Pink',
-  'ISTP': 'Navy Blue',
-  'ISFP': 'Turquoise',
-  'ESTP': 'Bright Red',
-  'ESFP': 'Peach'
+  'ENFJ': 'I LOVE YOU',
+  // Add other personality types and colors here...
 };
 
-// Function to show result
 function showResult() {
-  const personalityType = 
+  const personalityType =
     (traits.E > traits.I ? 'E' : 'I') +
     (traits.S > traits.N ? 'S' : 'N') +
     (traits.T > traits.F ? 'T' : 'F') +
     (traits.J > traits.P ? 'J' : 'P');
-  
+
   const personalityColor = personalityColors[personalityType];
   
   document.getElementById('question-container').style.display = 'none';
@@ -70,10 +49,9 @@ function showResult() {
   
   if (personalityType === 'ENFJ') {
     document.getElementById('personality-color').textContent = personalityColor;
-    document.getElementById('color-box').style.display = 'none'; // Hide the color box for ENFJ
+    document.getElementById('color-box').style.display = 'none';
   } else {
     document.getElementById('personality-color').textContent = personalityColor;
-    document.getElementById('color-box').style.backgroundColor = personalityColor; // Show color block for other types
-    document.getElementById('color-box').style.display = 'block'; // Ensure the color box is visible
+    document.getElementById('color-box').style.display = 'block';
   }
 }
