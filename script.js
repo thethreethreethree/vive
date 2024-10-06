@@ -58,7 +58,7 @@
       'INTJ': 'Purple',
       'INTP': 'Blue',
       'ENTJ': 'Red',
-      'ENTP': 'Orange',
+      'ENTP': 'Sunset Pink',
       'INFJ': 'Green',
       'INFP': 'Light Blue',
       'ENFJ': 'Yellow',
