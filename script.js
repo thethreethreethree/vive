@@ -1,5 +1,4 @@
-// Questions and personality color logic remain the same
-
+// Color mapping based on personality type
 const personalityColors = {
   'INTJ': 'Purple',
   'INTP': 'Blue',
@@ -7,7 +6,7 @@ const personalityColors = {
   'ENTP': 'Orange',
   'INFJ': 'Green',
   'INFP': 'Light Blue',
-  'ENFJ': 'I LOVE YOU', // ENFJ displays "I LOVE YOU" instead of a color
+  'ENFJ': 'I LOVE YOU', // ENFJ will show "I LOVE YOU" instead of a color
   'ENFP': 'Light Green',
   'ISTJ': 'Dark Blue',
   'ISFJ': 'Teal',
@@ -19,6 +18,7 @@ const personalityColors = {
   'ESFP': 'Peach'
 };
 
+// Function to show result
 function showResult() {
   const personalityType = 
     (traits.E > traits.I ? 'E' : 'I') +
@@ -27,7 +27,7 @@ function showResult() {
     (traits.J > traits.P ? 'J' : 'P');
   
   const personalityColor = personalityColors[personalityType];
-
+  
   document.getElementById('question-container').style.display = 'none';
   document.getElementById('result-container').style.display = 'block';
   
@@ -38,6 +38,6 @@ function showResult() {
     document.getElementById('color-box').style.display = 'none'; // Hide the color box for ENFJ
   } else {
     document.getElementById('personality-color').textContent = personalityColor;
-    document.getElementById('color-box').style.backgroundColor = personalityColor.toLowerCase();
+    document.getElementById('color-box').style.backgroundColor = personalityColor; // Show color block for other types
   }
 }
