@@ -1,9 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('images/background.png'); /* Corrected path to the background image */
-    background-size: cover;
-    background-position: center;
+    background-image: url('images/background.png'); /* Path to the background image */
+    background-size: cover; /* Cover the entire body */
+    background-position: center center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent repeating the background */
     color: white;
+    margin: 0; /* Ensure no margin */
+    height: 100vh; /* Full height */
 }
 
 .container {
