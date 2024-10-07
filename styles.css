@@ -19,7 +19,7 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 300px;
-  margin: auto;
+  margin-top: 150px;
 }
 
 /* Lower the questionnaire box (optional) */
