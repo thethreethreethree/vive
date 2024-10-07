@@ -12,11 +12,12 @@ body {
 .container {
     width: 80%;
     max-width: 600px;
-    margin: 200px auto; /* Adjusted margin to lower the container */
+    margin: 200px auto; /* Increased margin to lower the container further */
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    font-size: 18px; /* Increased text size by 5px */
 }
 
 #question-container {
@@ -24,10 +25,6 @@ body {
     flex-direction: column;
     align-items: center; /* Center the question field */
     justify-content: center; /* Center vertically */
-}
-
-h1 {
-    margin-bottom: 20px;
 }
 
 .option-button {
@@ -44,4 +41,17 @@ h1 {
 
 .option-button:hover {
     background-color: #777;
+}
+
+#result-container {
+    margin-top: 20px;
+}
+
+#personality-type {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#personality-color {
+    font-size: 20px;
 }
