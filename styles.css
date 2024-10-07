@@ -67,6 +67,6 @@ body {
 
   /* Adjust the container for mobile if needed */
   .container {
-    margin-top: 20px; /* Adjust this value for mobile vertical position */
+    margin-top: 100px; /* Adjust this value for mobile vertical position */
   }
 }
