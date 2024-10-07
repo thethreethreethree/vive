@@ -1,4 +1,4 @@
-/* Default background for larger screens */
+/* Default background for larger screens (desktop view) */
 body {
   background-image: url('images/background.png');
   background-size: cover;
@@ -11,7 +11,7 @@ body {
   align-items: center;
 }
 
-/* Original container styling for the questionnaire */
+/* Container styling for the questionnaire */
 .container {
   background-color: #fff;
   padding: 20px;
@@ -19,12 +19,10 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 300px;
-  margin-top: 150px;
-}
 
-/* Lower the questionnaire box (optional) */
-.container {
-  margin-top: 150px; /* Adjust if needed */
+  /* You can adjust the vertical position of the questionnaire here */
+  /* To lower the container, increase the value of margin-top */
+  margin-top: 180px; /* Change this value to adjust vertical position */
 }
 
 /* Option buttons styling */
@@ -58,17 +56,17 @@ body {
   font-size: 20px;
 }
 
-/* Media query for mobile-specific background */
+/* Mobile-specific background (for screens smaller than 768px) */
 @media only screen and (max-width: 768px) {
   body {
-    background-image: url('images/mobile-background.png');
+    background-image: url('images/mobile-background.png'); /* Mobile-specific background */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
   }
 
+  /* Adjust the container for mobile if needed */
   .container {
-    margin-top: 20px;
+    margin-top: 20px; /* Adjust this value for mobile vertical position */
   }
 }
