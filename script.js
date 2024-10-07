@@ -30,7 +30,21 @@ function selectAnswer(option) {
 
 const personalityColors = {
   'ENFJ': 'I LOVE YOU',
-  // Add other personality types and colors here...
+  'ENTJ': 'Red',
+  'ESFJ': 'Blue',
+  'ESTJ': 'Green',
+  'INFJ': 'Purple',
+  'INTJ': 'Silver',
+  'ISFJ': 'Pink',
+  'ISTJ': 'Orange',
+  'ENFP': 'Yellow',
+  'ENTP': 'Black',
+  'ESFP': 'Gold',
+  'ESTP': 'White',
+  'INFP': 'Light Blue',
+  'INTP': 'Turquoise',
+  'ISFP': 'Violet',
+  'ISTP': 'Brown'
 };
 
 function showResult() {
@@ -52,6 +66,7 @@ function showResult() {
     document.getElementById('color-box').style.display = 'none';
   } else {
     document.getElementById('personality-color').textContent = personalityColor;
+    document.getElementById('color-box').style.backgroundColor = personalityColor;
     document.getElementById('color-box').style.display = 'block';
   }
 }
