@@ -12,7 +12,7 @@ body {
 .container {
     width: 80%;
     max-width: 600px;
-    margin: 200px auto; /* Increased margin to lower the container further */
+    margin: 230px auto; /* Increased margin to lower the container further */
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
