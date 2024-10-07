@@ -1,57 +1,54 @@
 body {
-    font-family: Arial, sans-serif;
-    background-image: url('images/background.png'); /* Path to the background image */
-    background-size: cover; /* Cover the entire body */
-    background-position: center 20%; /* Center horizontally and adjust vertical position */
-    background-repeat: no-repeat; /* Prevent repeating the background */
-    color: white;
-    margin: 0; /* Ensure no margin */
-    height: 100vh; /* Full height */
+  font-family: Arial, sans-serif;
+  background: url('images/background.png') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
-    width: 80%;
-    max-width: 600px;
-    margin: 280px auto; /* Increased margin to lower the container further */
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 18px; /* Increased text size by 5px */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+  margin-top: 100px; /* Lowering the container */
 }
 
-#question-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the question field */
-    justify-content: center; /* Center vertically */
+h1 {
+  display: none; /* Removed the title */
 }
 
 .option-button {
-    display: block;
-    margin: 10px auto;
-    padding: 15px;
-    background-color: #5e5e5e;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px; /* Increased padding for buttons */
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px; /* Increased font size */
 }
 
 .option-button:hover {
-    background-color: #777;
+  background-color: #2980b9;
 }
 
 #result-container {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 #personality-type {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 #personality-color {
-    font-size: 20px;
+  font-size: 20px;
 }
